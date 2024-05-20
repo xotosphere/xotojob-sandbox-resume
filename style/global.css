@@ -1,0 +1,16 @@
+[v-cloak]{visibility:hidden}
+
+#root{filter: blur(10px);transition: filter 0.3s ease-in-out;}
+
+:root{--headings-font:'Poppins',sans-serif;--primary-font:'Titillium Web';--x:7.5rem;--y:7.5rem;--cSize:0.4rem;--cSizeSmall:0.4rem}
+ul{padding:0;margin:0;list-style:inside ethiopic-halehame;overflow:hidden}
+li::marker{padding:0;margin:0}
+html{scroll-behavior:smooth!important}
+a:-webkit-any-link{cursor:text}
+body{background-color:#f5f5f5;font-size:.7em}
+body.noscroll{overflow:hidden}
+p{margin:0;white-space:break-spaces}
+h1{font-size:1.8em;font-weight:800;text-align:right;line-height:1.5}
+h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-family:var(--headings-font);padding:0;margin:0}
+a.no-decorate{text-decoration:none;color:#000}
+a.no-decorate:hover{cursor:pointer;backface-visibility:hidden;position:relative;transition:.2s color ease;text-decoration:none;color:var(--main-color);-ms-transition:.2s color ease;-o-transition:.2s color ease}

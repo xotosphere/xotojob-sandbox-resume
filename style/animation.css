@@ -1,0 +1,16 @@
+@keyframes slide-right{ from{margin-left:120%} to{margin-left:-50%} }
+@keyframes slide-in-top{ 0%{top:100vh;} 100%{top:20vh;} }
+@keyframes float-in-up{ 0%{opacity:0;transform:translate(0,0.9rem);-ms-transform:translate(0,0.9rem);-o-transform:translate(0,0.9rem)} 30%{opacity:.7} 100%{opacity:1;transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0)} }
+@keyframes move-forever{ 0%{transform:translate3d(-5.6rem,0,0);-ms-transform:translate3d(-5.6rem,0,0);-o-transform:translate3d(-5.6rem,0,0)} 100%{transform:translate3d(5rem,0,0)} }
+@keyframes blink{ 0%{opacity:1} 20%{opacity:0} 50%{opacity:1} 70%{opacity:0} 100%{opacity:1} }
+
+.slide-in-top{animation-name:slide-in-top;animation-duration:.3s;animation-timing-function:ease-in-out}
+.float-in-up{animation-name:float-in-up;animation-duration:.3s;animation-timing-function:ease-in-out}
+.animated-underline{animation-fill-mode:forwards}
+.cursor-c{margin-left:0.1rem;position:absolute;width:0.8rem;color:var(--main-color-lighter);opacity:0;animation:blink 2s}
+
+.parallax>use{animation:move-forever 20s cubic-bezier(.55,.5,.45,.5) infinite;}
+.parallax>use:nth-child(1){animation-delay:-2s;animation-duration:7s}
+.parallax>use:nth-child(2){animation-delay:-3s;animation-duration:10s}
+.parallax>use:nth-child(3){animation-delay:-4s;animation-duration:12s}
+.parallax>use:nth-child(4){animation-delay:-5s;animation-duration:7s}

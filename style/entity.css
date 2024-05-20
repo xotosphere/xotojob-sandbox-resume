@@ -1,0 +1,7 @@
+.entity-yeti-circle{width:5.8rem;clip-path:circle(35% at 55% 45%);margin-left:-3.4rem;position:absolute;height:6.3rem;margin-top:-2.6rem}
+.entity-yeti-walker{width:8.6rem;image-rendering:auto;bottom:0;image-rendering:crisp-edges;image-rendering:auto;position:absolute;filter:saturate(.4) drop-shadow(.18rem .06rem .06rem rgba(0, 0, 0, .6)) grayscale(1)}
+.entity-yeti-right{opacity:1;animation-name:slide-right;animation-duration:43s;animation-delay:0s;animation-iteration-count:infinite}
+.entity-mountain{width:100%;position:absolute;height:26em;z-index:-2;left:0;bottom:0}
+.entity-wave-footer{position:absolute;left:0;bottom:0;padding:0;display:inline-flex;padding:.5em auto;width:100%;justify-content:space-between}
+.entity-waves{position:absolute;opacity:.4;width:100%;min-height:5rem;bottom:-.6rem;left:0;z-index:-1;max-height:5.3rem}
+#typewriter{position:relative;display:contents;opacity:0;font-family:var(--headings-font)}

@@ -1,0 +1,21 @@
+#drop-target{border:.2em solid; top: 20vh;border-color:#000;background:#fff;font-family:var(--headings-font);border-radius:.625rem;z-index:10;padding:2em;position:fixed;left:0;text-align:center;right:0;opacity:.98;height:fit-content;margin:0 auto;width:fit-content;}
+select{appearance:none;outline:0;box-shadow:none;border:0!important;background:#fff;background-image:none}
+select::-ms-expand{display:none}
+select{flex:1;padding:0 .5em;color:#000;cursor:pointer}
+
+.drop-target-icon{margin:auto;width:fit-content;padding:0;height:fit-content;border-radius:50%;background:#000;padding:1.5em}
+.drop-target-text{padding:.5em 0;overflow-wrap:break-word;font-size:2.1rem;font-family:var(--headings-font);font-weight:900;color:#000;width:80%;margin:auto}
+.drop-target-select{margin:auto;position:relative;display:flex;width:20em;height:3em;line-height:3;background:#fff;overflow:hidden;border-radius:.25em;border:.1rem solid #000}
+.drop-target-select::after{content:'\25BC';position:absolute;top:0;right:0;padding:0 1em;background:#fff;cursor:pointer;pointer-events:none;transition:.25s all ease}
+.drop-target-select:hover::after{color:#4612f3}
+
+.circle{border: .15em solid var(--main-color-lighter);}
+.circle{position:relative;display:inline-flex;justify-content:center;align-items:center;border-radius:5em;font-family:var(--headings-font);background-color:var(--main-color-lighter);user-select:none;cursor:pointer;margin-top:0}
+.circle:after{content:'';box-shadow:0 0 0 var(--main-color-lighter);transition:box-shadow .4s;width:100%;height:100%;position:absolute;border-radius:5em}
+.circle:active{transform:scale(.95)}
+.circle.openable{z-index:99999999}
+.circle .circle-icon-info{cursor:pointer;visibility:hidden;pointer-events:none;color:#f0f8ff;opacity:0;transition:opacity .6s;z-index:1;top:3in;position:absolute;text-shadow:.25rem .1rem .3em #000;right:0;left:0;width:8.5in}
+.circle.open .circle-icon-info{visibility:visible;opacity:1;display:flex;flex-flow:column;align-items:center}
+.circle.open{width:100%;height:100%;}
+.circle.open:after{content:'';box-shadow:0 0 0 15in var(--main-color); overflow:hidden}
+.circle:hover{transition: all .3s ease;box-shadow:0 .1rem .2rem var(--main-color);color:#000; border: .15em solid var(--main-color); }

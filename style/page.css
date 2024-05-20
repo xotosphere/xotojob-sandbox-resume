@@ -1,0 +1,24 @@
+.page>*{transition-duration:.6s;transition-property:opacity;font-family:var(--primary-font)}
+.page{gap:.5em;justify-content:space-between;display:flex;flex-flow:column;border-radius:.5em;z-index:0;padding:2em;max-width:8.5in;min-height:11in;position:relative;margin:.5em auto;box-shadow:.2em .2rem .4rem .2rem rgb(0 0 0 / 30%);background-color:white;overflow:hidden}
+.page.loaded>*{opacity:1}
+.page-footer{place-items:center;position:relative;justify-content:space-between;display:flex;width:100%}
+.column{display:flex;flex-direction:column;overflow-wrap:anywhere}
+.grid{justify-content:space-between;background:0 0;display:flex;width:100%}
+.centered{display:block}
+.centered-column{text-align:center;width:100%}
+.centered-column>.header{ width: 100%; padding: .5em}
+.letter-text { display: flex; flex-direction: column; gap: 5em; justify-content: space-between; }
+.sub-section{margin: .5rem 0;}
+.section>.header{display:flex;border-bottom:.35em solid var(--main-color-lighter);}
+.sub-section>.header{display:flex;width:100%;place-items:center;justify-content:space-between; gap:.5em}
+.sub-section>.sub-header{display:flex}
+.sub-section>.sub-section{width:fit-content}
+.results-list{display:grid;flex-wrap:wrap}
+.results-inline{display:flex;flex-wrap:wrap;gap:.5em}
+.proficiency-level{background-color:#fff;display:inline;border:.06rem solid var(--main-color-lighter);border-radius:5em;float:right;height:.3rem;width:3rem;position:relative;padding:.06rem}
+.proficiency-bar{float:left;background-color:var(--main-color-lighter);height:.3rem;border-radius:5em;position:relative}
+.expand{text-align:center;opacity:.7;padding:0 .25rem;right:2em;transition:.3s all ease-in-out;position:absolute;align-content:space-around;cursor:pointer;border-radius:.5em;border:.25em solid var(--main-color-lighter);color:#000}
+.expand:hover{background-color:var(--main-color-lighter);opacity:1}
+.tag{padding:.15rem .35rem; display:inline-block;border:.05rem solid var(--main-color-lighter);margin:0 .5em .5em 0;border-radius:5em;text-transform:uppercase}
+.tag:hover{background-color:var(--main-color-lighter);transition:background-color .2s linear;cursor:pointer}
+span.close.icon{transform:rotateZ(45deg)!important}
